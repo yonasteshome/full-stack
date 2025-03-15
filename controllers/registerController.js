@@ -64,7 +64,7 @@ const login = async (req, res) => {
 
 // generate token
 const generateToken=(id)=>{
-    return jwt.sign({id},process.env.JWT_SECRET,{expiresIn:'2d'})
+    return jwt.sign({id},process.env.JWT_SECRET,{expiresIn:'1000d'})
 }
 
 // usesr ui
